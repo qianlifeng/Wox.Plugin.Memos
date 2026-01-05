@@ -1,14 +1,129 @@
 {
-  "Id": "[Id]",
-  "TriggerKeywords": ["[Trigger Keyword]"],
-  "Name": "[Name]",
-  "Description": "[Description]",
-  "Author": "[Author Name]",
-  "Version": "0.0.1",
+  "Id": "66c21ce1-f296-49dd-b75b-f05e76743c93",
+  "Name": "Memos",
+  "Author": "qianlifeng",
+  "Version": "1.0.0",
   "MinWoxVersion": "2.0.0",
-  "Runtime": "nodejs",
-  "Website": "[Website]",
-  "Entry": "index.js",
+  "Description": "i18n:plugin_description",
   "Icon": "relative:images/app.png",
-  "SupportedOS": ["windows", "linux", "darwin"]
+  "TriggerKeywords": [
+    "memos"
+  ],
+  "Runtime": "nodejs",
+  "Entry": "index.js",
+  "SupportedOS": [
+    "windows",
+    "linux",
+    "darwin"
+  ],
+  "Commands": [
+    {
+      "Command": "create",
+      "Description": "i18n:command_create_desc"
+    }
+  ],
+  "Features": [
+    {
+      "Name": "ignoreAutoScore",
+      "Params": {}
+    }
+  ],
+  "SettingDefinitions": [
+    {
+      "Type": "textbox",
+      "Value": {
+        "Key": "host",
+        "Label": "i18n:setting_host_label",
+        "Tooltip": "i18n:setting_host_tooltip",
+        "DefaultValue": "https://demo.usememos.com",
+        "Style": {
+          "Width": 400
+        }
+      }
+    },
+    {
+      "Type": "textbox",
+      "Value": {
+        "Key": "token",
+        "Label": "i18n:setting_token_label",
+        "Tooltip": "i18n:setting_token_tooltip",
+        "DefaultValue": "",
+        "Style": {
+          "Width": 400
+        }
+      }
+    }
+  ],
+  "I18n": {
+    "en_US": {
+      "plugin_description": "Memos - View list, search, and create memos",
+      "command_create_desc": "Quickly create a new memo",
+      "setting_host_label": "Memos Server URL",
+      "setting_host_tooltip": "Example: https://demo.usememos.com",
+      "setting_token_label": "Access Token",
+      "setting_token_tooltip": "Get Access Token from Memos settings",
+      "unconfigured_title": "Memos Not Configured",
+      "unconfigured_subtitle": "Please configure server URL and access token in plugin settings",
+      "create_title": "Create memo: %s",
+      "create_subtitle": "Press Enter to create memo",
+      "search_title": "Search memos",
+      "search_subtitle": "memos <keyword> - Search memos",
+      "list_title": "View list",
+      "list_subtitle": "memos - View all memos",
+      "loading_failed": "Loading failed",
+      "no_memos": "No memos yet",
+      "no_memos_subtitle": "Use memos <content> to create your first memo",
+      "search_failed": "Search failed",
+      "no_results": "No results found for '%s'",
+      "no_results_subtitle": "Try other keywords",
+      "open_memos": "Open Memos",
+      "open_in_browser": "Open in browser: %s",
+      "action_open": "Open in browser",
+      "action_copy": "Copy content",
+      "action_edit": "Edit",
+      "action_delete": "Delete",
+      "action_create": "Create",
+      "edit_content_label": "Content",
+      "edit_content_tooltip": "Edit memo content",
+      "property_tags": "Tags",
+      "property_created": "Created",
+      "property_attachments": "Attachments",
+      "property_length": "Length"
+    },
+    "zh_CN": {
+      "plugin_description": "Memos - 查看列表，搜索和创建备忘录",
+      "command_create_desc": "快速创建新备忘录",
+      "setting_host_label": "Memos 服务器地址",
+      "setting_host_tooltip": "例如: https://demo.usememos.com",
+      "setting_token_label": "访问令牌 (Access Token)",
+      "setting_token_tooltip": "在 Memos 设置中获取 Access Token",
+      "unconfigured_title": "Memos 未配置",
+      "unconfigured_subtitle": "请在插件设置中配置服务器地址和访问令牌",
+      "create_title": "创建备忘录: %s",
+      "create_subtitle": "按 Enter 创建备忘录",
+      "search_title": "搜索备忘录",
+      "search_subtitle": "memos <关键词> - 搜索备忘录",
+      "list_title": "查看列表",
+      "list_subtitle": "memos - 查看所有备忘录",
+      "loading_failed": "加载失败",
+      "no_memos": "暂无备忘录",
+      "no_memos_subtitle": "使用 memos <内容> 创建第一条备忘录",
+      "search_failed": "搜索失败",
+      "no_results": "未找到 '%s' 的结果",
+      "no_results_subtitle": "尝试其他关键词",
+      "open_memos": "打开 Memos",
+      "open_in_browser": "在浏览器中打开: %s",
+      "action_open": "在浏览器中查看",
+      "action_copy": "复制内容",
+      "action_edit": "编辑",
+      "action_delete": "删除",
+      "action_create": "创建",
+      "edit_content_label": "内容",
+      "edit_content_tooltip": "编辑备忘录内容",
+      "property_tags": "标签",
+      "property_created": "创建时间",
+      "property_attachments": "附件",
+      "property_length": "长度"
+    }
+  }
 }
